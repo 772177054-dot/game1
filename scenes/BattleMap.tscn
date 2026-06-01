@@ -1,0 +1,116 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/BattleMap.gd" id="1_battle_script"]
+
+[node name="BattleMap" type="Node2D"]
+script = ExtResource("1_battle_script")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(960, 540)
+enabled = true
+
+[node name="TerrainPlaceholder" type="Polygon2D" parent="."]
+polygon = PackedVector2Array(0, 0, 1920, 0, 1920, 1080, 0, 1080)
+color = Color(0.25, 0.42, 0.22, 1)
+
+[node name="RoadPlaceholder" type="Line2D" parent="."]
+points = PackedVector2Array(120, 880, 520, 680, 980, 590, 1420, 410, 1800, 230)
+width = 92.0
+default_color = Color(0.52, 0.38, 0.22, 1)
+
+[node name="PlayerBasePlaceholder" type="Polygon2D" parent="."]
+position = Vector2(350, 720)
+polygon = PackedVector2Array(-115, -80, 115, -80, 135, 80, -135, 80)
+color = Color(0.1, 0.48, 0.78, 1)
+
+[node name="PlayerBaseLabel" type="Label" parent="."]
+position = Vector2(222, 625)
+text = "placeholder 玩家主营\n苍旗军"
+
+[node name="EnemyBasePlaceholder" type="Polygon2D" parent="."]
+position = Vector2(1540, 290)
+polygon = PackedVector2Array(-115, -80, 115, -80, 135, 80, -135, 80)
+color = Color(0.72, 0.12, 0.1, 1)
+
+[node name="EnemyBaseLabel" type="Label" parent="."]
+position = Vector2(1412, 195)
+text = "placeholder 敌方主营\n赤焰军"
+
+[node name="ForestPlaceholder" type="Polygon2D" parent="."]
+position = Vector2(890, 280)
+polygon = PackedVector2Array(-210, -100, 230, -120, 270, 95, -180, 130)
+color = Color(0.08, 0.29, 0.12, 1)
+
+[node name="ForestLabel" type="Label" parent="."]
+position = Vector2(770, 245)
+text = "placeholder 树林 / 木材资源"
+
+[node name="FoodPlaceholder" type="Polygon2D" parent="."]
+position = Vector2(870, 790)
+polygon = PackedVector2Array(-170, -70, 190, -80, 210, 65, -180, 80)
+color = Color(0.78, 0.68, 0.28, 1)
+
+[node name="FoodLabel" type="Label" parent="."]
+position = Vector2(750, 760)
+text = "placeholder 粮草资源"
+
+[node name="PlayerUnits" type="Node2D" parent="."]
+
+[node name="InfantryPlaceholder" type="Polygon2D" parent="PlayerUnits"]
+position = Vector2(500, 715)
+polygon = PackedVector2Array(0, -24, 21, 12, -21, 12)
+color = Color(0.2, 0.78, 1, 1)
+
+[node name="ArcherPlaceholder" type="Polygon2D" parent="PlayerUnits"]
+position = Vector2(545, 755)
+polygon = PackedVector2Array(0, -20, 18, 0, 0, 20, -18, 0)
+color = Color(0.2, 0.78, 1, 1)
+
+[node name="CavalryPlaceholder" type="Polygon2D" parent="PlayerUnits"]
+position = Vector2(460, 770)
+polygon = PackedVector2Array(-26, -14, 26, -14, 26, 14, -26, 14)
+color = Color(0.2, 0.78, 1, 1)
+
+[node name="EnemyUnits" type="Node2D" parent="."]
+
+[node name="EnemyInfantryPlaceholder" type="Polygon2D" parent="EnemyUnits"]
+position = Vector2(1370, 350)
+polygon = PackedVector2Array(0, -24, 21, 12, -21, 12)
+color = Color(1, 0.28, 0.22, 1)
+
+[node name="EnemyArcherPlaceholder" type="Polygon2D" parent="EnemyUnits"]
+position = Vector2(1320, 310)
+polygon = PackedVector2Array(0, -20, 18, 0, 0, 20, -18, 0)
+color = Color(1, 0.28, 0.22, 1)
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="TopBar" type="PanelContainer" parent="HUD"]
+offset_right = 1920.0
+offset_bottom = 56.0
+
+[node name="ResourceLabel" type="Label" parent="HUD/TopBar"]
+layout_mode = 2
+text = "粮草: 500    木材: 300    人口: 3/20    时间: 00:00    HUD placeholder"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InfoPanel" type="PanelContainer" parent="HUD"]
+offset_left = 620.0
+offset_top = 920.0
+offset_right = 1300.0
+offset_bottom = 1060.0
+
+[node name="InfoLabel" type="Label" parent="HUD/InfoPanel"]
+layout_mode = 2
+text = "当前选中对象信息 placeholder\n名称 / 血量 / 操作按钮会在后续版本实现"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ReturnButton" type="Button" parent="HUD"]
+unique_name_in_owner = true
+offset_left = 1720.0
+offset_top = 72.0
+offset_right = 1880.0
+offset_bottom = 120.0
+text = "返回主菜单"

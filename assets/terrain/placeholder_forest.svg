@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="placeholder forest resource">
+  <rect width="128" height="128" fill="#3f7130"/>
+  <circle cx="36" cy="54" r="24" fill="#174d21"/>
+  <circle cx="72" cy="46" r="28" fill="#1e5f29"/>
+  <circle cx="96" cy="70" r="22" fill="#143e1c"/>
+  <text x="64" y="118" text-anchor="middle" font-size="12" fill="#fff">placeholder forest</text>
+</svg>

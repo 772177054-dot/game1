@@ -1,0 +1,25 @@
+; Engine configuration file.
+; Godot 4 project for 《烽火营垒》 initialization.
+
+config_version=5
+
+[application]
+
+config/name="烽火营垒"
+config/description="2D/2.5D 国风轻 RTS / 营地建造攻防 Demo project initialization."
+run/main_scene="res://scenes/Main.tscn"
+config/features=PackedStringArray("4.2")
+config/icon="res://assets/ui/placeholder_project_icon.svg"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=0
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+textures/canvas_textures/default_texture_filter=0
