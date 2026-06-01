@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="placeholder road terrain">
+  <rect width="128" height="128" fill="#4c7f35"/>
+  <path d="M-10 100C34 64 70 72 138 24" stroke="#8f6a3d" stroke-width="34" fill="none"/>
+  <text x="64" y="118" text-anchor="middle" font-size="12" fill="#fff">placeholder road</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="128" viewBox="0 0 160 128" role="img" aria-label="placeholder main base">
+  <rect width="160" height="128" fill="none"/>
+  <rect x="28" y="52" width="104" height="54" fill="#8a5b2b"/>
+  <path d="M18 56l62-38 62 38z" fill="#2b88b8"/>
+  <rect x="72" y="72" width="18" height="34" fill="#3b2414"/>
+  <text x="80" y="122" text-anchor="middle" font-size="12" fill="#111">placeholder main base</text>
+</svg>

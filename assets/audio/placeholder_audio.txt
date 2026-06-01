@@ -1,0 +1,4 @@
+placeholder audio marker
+
+This folder is reserved for future music and sound effects.
+All current audio files are placeholders and should be replaced by polished assets later.

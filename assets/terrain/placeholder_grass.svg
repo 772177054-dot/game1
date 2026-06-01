@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="placeholder grass terrain">
+  <rect width="128" height="128" fill="#4c7f35"/>
+  <path d="M18 92l10-24 8 24M62 104l12-34 10 34M96 72l8-20 8 20" stroke="#2e5d22" stroke-width="5" fill="none"/>
+  <text x="64" y="18" text-anchor="middle" font-size="12" fill="#fff">placeholder grass</text>
+</svg>

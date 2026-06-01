@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="placeholder project icon">
+  <rect width="128" height="128" fill="#17313a"/>
+  <path d="M34 96V24h8v72z" fill="#d8b45a"/>
+  <path d="M42 28c22-12 34 12 56 0v42c-22 12-34-12-56 0z" fill="#2b9ac8"/>
+  <text x="64" y="116" text-anchor="middle" font-size="12" fill="#ffffff">placeholder</text>
+</svg>
